@@ -6,11 +6,11 @@
             <form [formGroup]="signinForm" (ngSubmit)="onSubmitSigninForm()" >
                 <div class="form-group">
                     <label for="email">Adresse email</label>
-                    <input type="email" id="email" class="form-control" placeholder="exemple@exemple.com" formControlName="email">
+                    <input type="email" id="email" class="form-control" placeholder="demo@demo.fr" formControlName="email">
                 </div>
                 <div class="form-group">
                     <label for="password" >Mot de passe</label>
-                    <input type="password" id="password" class="form-control" placeholder="Minimum 6 caractères" formControlName="password">
+                    <input type="password" id="password" class="form-control" placeholder="demo123" formControlName="password">
                 </div>
                 <button class="btn btn-primary" type="submit" [disabled]="signinForm.invalid" >Connexion</button>
             </form>
